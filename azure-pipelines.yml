@@ -9,20 +9,15 @@ trigger:
 pool: kg_dell_sh_ap
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
     Python36:
-      python.version: '3.6'
+      python.version: '3.8'
     Python37:
-      python.version: '3.7'
+      python.version: '3.8.5'
 
 steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
-    addToPath: true
   displayName: 'Use Python $(python.version)'
 
 - script: |
