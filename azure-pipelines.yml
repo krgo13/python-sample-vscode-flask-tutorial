@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: kg_dell_sh_ap
 strategy:
   matrix:
     Python27:
