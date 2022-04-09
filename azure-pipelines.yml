@@ -9,15 +9,16 @@ trigger:
 pool: kg_dell_sh_ap
 strategy:
   matrix:
-    Python36:
+    Python38:
       python.version: '3.8'
-    Python37:
+    Python385:
       python.version: '3.8.5'
 
 steps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
+    architecture: 'x86'
   displayName: 'Use Python $(python.version)'
 
 - script: |
