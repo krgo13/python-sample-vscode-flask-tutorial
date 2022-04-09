@@ -13,9 +13,7 @@ strategy:
       python.version: '3.8'
     Python385:
       python.version: '3.8.5'
-    Python39:
-      python.version: '3.9'
-    Python395:
+    Python399:
       python.version: '3.9.9'
 
 steps:
